@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIRLS AND CANDLESS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    
+</head>
+<!--панель управления-->
+<body>
+    <header>
+        <div id="title" onclick="SlowScroll('#top')">
+            <span>YOHO CANDLESS</span>
+        </div>
+        <div id="menu">
+            <a href = "#" title="мы" onclick="SlowScroll('#we')">мы</a>
+            <a href = "#" title="свечки" onclick="SlowScroll('#magazine')">свечки</a>
+            <a href = "#" title="заказ" onclick="SlowScroll('#call')">заказ</a>
+            <a href = "#" title="вопросы" onclick="SlowScroll('#question')">вопросы</a>
+
+        </div>
+    </header> 
+
+    <div id="top">
+        <h1> ВЫБЕРИ СВОЙ ИДЕАЛЬНЫЙ АРОМАТ</h1>
+    </div>
+
+    <!--раздел о нас-->
+
+    <div id = "we">
+        <div class="intro">
+            <h2>Кто мы такие?</h2>
+        </div>
+        <div class = "text">
+            <span>
+                Мы создаем абсолютно индивидуальный аромат из самых качественных ингредиентов! Наша маленькая мастерская на дому наполнена ароматоми корицы, апельсина и шоколада.
+                Наш продукт абсолютно безопасен для вашего здоровья. Наши ароматические свечи создадут уют в вашем доме, а также смогут стать самым лучшим подарком на любые
+                праздники.
+            </span>
+        </div>
+    </div>
+
+    <!--магазины-->
+    <div id="magazine">
+        <h2>НАШИ ТОВАРЫ</h2>
+        <div class ="line_img">
+        <div class="img">
+            <img src="апельсин.JPG" alt=""/>
+            <h7>CHRISTMAS MANDARIENS</h7>
+            <span>цитрусовые нотки мандарина и апельсина, сладкий аромат ванили и нотка черного перца</span>
+            <h6>1290 рублей</h6>
+        </div>
+        <div class="img">
+            <img src="имбирь.JPG" alt=""/>
+            <h7>COOKIES FOR SANTA</h7>
+            <span>ароматные имбирь и корица с нотками мускатного ореха и сладкой ванили</span>
+            <h6>1290 рублей</h6>
+        </div>
+        </div>
+        <div class ="line_img">
+        <div class="img">
+            <img src="попкорн.JPG" alt=""/>
+            <h7>CARAMEL DRIZZLE</h7>
+            <span>сладкий карамельный попкорн и ароматный пралине</span>
+            <h6>1290 рублей</h6>
+        </div>
+        <div class="img">
+            <img src="все.JPG" alt=""/>
+            <h7>YOUR OWN CANDLESS</h7>
+            <span>создай свой собственный аромат</span>
+            <h6>1290 рублей</h6>
+        </div>
+        </div>
+    </div>
+
+    <!--раздел заказать товар-->
+
+    <div id="call">
+        <div class="title">
+            <h5>ОФОРМИТЬ ЗАКАЗ</h5>
+        </div>
+        <form  id = "form_input">
+            <label for="name">Имя<span>*</span></label><br>
+            <input type = "text" placeholder="Введите имя" name ="name" id="name"><br>
+            <label for="email">Ваша почта<span>*</span></label><br>
+            <input type = "email" placeholder="Введите email" name ="email" id="email"><br>
+            <label for="message">Сообщение<span>*</span></label><br>
+            <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+            <div id ="mess_end"class ="btn">Отправить</div>
+        </form>
+    </div>
+
+    <!--вопросы и ответы-->
+    <div id="question">
+        <div>
+            <span class ="title_1">Оплата</span><br>
+            <span class ="heding">Как будет проходить оплата?</span>
+            <p>Оплата товара происходит безналично. После отправки формы, менеджер получает ваш запрос. После чего вы согласовываете с ним дату, время и способ доставки.
+                Далее вам направляется ссылка на оплату онлайн. Оплата проводистя через любой онлайн банк.
+            </p>
+            <span class ="heding">Зависит ли цена от выбора ингредиентов?</span>
+            <p> Нет. На сайте представленна фиксированная цена за любую комбинацию ингредиентов.
+            </p>
+        </div>
+        <div>
+            <span class ="title_1">Доставка</span><br>
+            <span class ="heding">Входит ли доставка в стоимость товара?</span>
+            <p> К сожалению, нет. Итоговая цена будет расчитана от пункта назначения товара, а также от способа доставки.
+            </p>
+            <span class ="heding">Сколько времени занимает доставка?</span>
+            <p> Время доставки зависит от её способа. Если вы живете в Москве, то можете оформить доставку курьером или приехать лично к нам в мастерскую.
+                Если вы живете за пределами г.Москва, то время доставки будет зависеть от её способа. Почтой России - до 14 дней, экспресс-доставками - до 3 дней.
+            </p>
+        </div>
+        <div>
+            <span class ="title_1">Изготовление свечек</span><br>
+            <span class ="heding">Как долго изготоваливается свечка?</span>
+            <p> На изготовлении свечи уходит от 1 до 7 дней, в зависимости от наличия материалов в мастерской и ваших личных пожеланий.
+            </p>
+            <span class ="heding">Могу ли я предложить свой состав для свечи или убрать ингредиенты из уже существующей?</span>
+            <p> Конечно да! Товары, представленные на нашем сайте - базовые и проверенные. Мы можем создать свечу индивидуально для вас, но в этом случаем 
+                время изготовления может занять больше установленного времени, так как некоторые материалы придется дозаказывать. Также вы можете убрать часть
+                ингредиентов из представленных товаров.
+            </p>
+            
+        </div>
+    </div>
+
+    
+    
+    <!--плавное перелистывание-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        function SlowScroll(id){
+            $('html,body').animate({
+                scrollTop:$(id).offset().top
+            },500)
+        }
+        $(document).on("scroll",function () {
+            if($(window).scrollTop() === 0)
+                $("header").removeclass("fixed");
+            else
+                $("header").attr("class","fixed");
+        });
+    </script>
+</body>
+</html>
